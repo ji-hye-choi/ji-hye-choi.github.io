@@ -1,0 +1,81 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+a {text-decoration: none;}
+li {list-style: none;}
+
+
+/* 모바일 */
+
+
+.mobile-header {
+    background-color: tomato;
+    text-align: center;
+    padding: 0 0 40 40px;
+}
+
+
+.container {
+    max-width: 1200px;
+/*    border: 10px solid red;*/
+    margin: 0 auto;
+}
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container .item {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 40px;
+/*    border: 10px solid blue;*/
+    float: left;
+}
+.container .item img {width: 100%;}
+
+.container .item h3 {
+    height: auto;
+    padding: 8px 0;
+/*    border: 1px solid red;*/
+    font-size: 20px;
+    line-height: 1.2;
+}
+.container .item p {
+    height: auto;
+    border: 1px solid blue;
+    font-size: 14px;
+    line-height: 1.75;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+/* 태블릿 */
+@media(min-width: 600px){
+    .container .item {width: 50%;}
+    .container .item h3 {height: 48px;}
+    .container .item p {height: 70px;}
+}
+
+/* 데스크탑 */
+@media(min-width: 1025px){
+    .container .item {width: 25%;}
+}
+
+
+
+
+
+
+
+
+
